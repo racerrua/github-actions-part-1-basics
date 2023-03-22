@@ -43,7 +43,7 @@ jobs:
       run: mkdir test_ci
 
     - name: List current folder
-      run : /bin/sh ls -la
+      run : /bin/sh -c ls -la
     
   my_deploy:
     runs-on: ubuntu-latest
