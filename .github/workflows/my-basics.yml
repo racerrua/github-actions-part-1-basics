@@ -35,10 +35,15 @@ jobs:
    
     - name: Git clone my repo
       uses: actions/checkout@v1   
-  
+
+    - name: PWD
+      run: pwd
+    - name: add dir
+      run: mkdir test_ci
+
     - name: List current folder
       run : ls -la
-  
+    
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_testing]
