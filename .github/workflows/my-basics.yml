@@ -37,7 +37,7 @@ jobs:
       run : ls -la
    
     - name: Git clone my repo
-      uses: actions/checkout@v1   
+      uses: actions/checkout@v3  
 
     - name: PWD
       run: pwd
