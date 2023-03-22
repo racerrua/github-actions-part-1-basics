@@ -21,8 +21,8 @@ on:
 jobs:
   my_testing:
     runs-on: ubuntu-latest
-    env:
-      APPLICATION_NAME: "MyFlask_from_job_1"
+    #env:
+    #  APPLICATION_NAME: "MyFlask_from_job_1"
     steps:
     - name: Print Hello Message in Testing
       run : echo "Hello World from Testing job"
