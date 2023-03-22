@@ -47,7 +47,7 @@ jobs:
     - name: List current folder
       run : /bin/sh -c ls -la
     - name: ECHO APPLICATION_NAME
-      run: echo ${{ APPLICATION_NAME }}
+      run: echo ${{ env.APPLICATION_NAME }}
       
   my_deploy:
     runs-on: ubuntu-latest
