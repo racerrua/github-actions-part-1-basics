@@ -21,6 +21,8 @@ on:
 jobs:
   my_testing:
     runs-on: ubuntu-latest
+    env:
+      APPLICATION_NAME: "MyFlask_from_job_1"
     steps:
     - name: Print Hello Message in Testing
       run : echo "Hello World from Testing job"
@@ -44,7 +46,9 @@ jobs:
 
     - name: List current folder
       run : /bin/sh -c ls -la
-    
+    - name: ECHO APPLICATION_NAME
+      run: echo ${{ APPLICATION_NAME }}
+      
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_testing]
